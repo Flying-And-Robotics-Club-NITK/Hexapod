@@ -1,0 +1,376 @@
+<?xml version="1.0" ?>
+<robot name="crapdesign1" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find crapdesign1_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find crapdesign1_description)/urdf/crapdesign1.trans" />
+<xacro:include filename="$(find crapdesign1_description)/urdf/crapdesign1.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-2.7797920695261423e-16 1.6275392110627996e-16 0.2408070750718569"/>
+    <mass value="2.311532628093681"/>
+    <inertia ixx="0.010895" ixy="0.0" ixz="0.0" iyy="0.010895" iyz="0.0" izz="0.021777"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lowerleg1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0014999999999999142 1.8978996156604477e-07 -0.049023526239640056"/>
+    <mass value="0.25197878483643155"/>
+    <inertia ixx="0.000211" ixy="0.0" ixz="-0.0" iyy="0.000211" iyz="0.0" izz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.0015 0.124904 -0.112373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/lowerleg1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.0015 0.124904 -0.112373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/lowerleg1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="upperleg2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0007498726713631859 0.0012990948949807915 -0.04902352623964014"/>
+    <mass value="0.2519787848364315"/>
+    <inertia ixx="0.000211" ixy="0.0" ixz="-0.0" iyy="0.000211" iyz="0.0" izz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.10742 0.063751 -0.112373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/upperleg2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.10742 0.063751 -0.112373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/upperleg2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lowerleg4_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0007501273286365934 -0.0012989051050190312 -0.04902352623964018"/>
+    <mass value="0.25197878483643155"/>
+    <inertia ixx="0.000211" ixy="-0.0" ixz="0.0" iyy="0.000211" iyz="0.0" izz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.10892 0.061153 -0.112373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/lowerleg4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.10892 0.061153 -0.112373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/lowerleg4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lowerleg3_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0007498732907923605 -0.0012990945373532112 -0.04902352623964021"/>
+    <mass value="0.2519787848364316"/>
+    <inertia ixx="0.000211" ixy="-0.0" ixz="0.0" iyy="0.000211" iyz="0.0" izz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.10742 -0.063751 -0.112373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/lowerleg3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.10742 -0.063751 -0.112373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/lowerleg3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lowerleg6_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0014999999999999645 -1.8907470664131232e-07 -0.04902352623964021"/>
+    <mass value="0.25197878483643155"/>
+    <inertia ixx="0.000211" ixy="-0.0" ixz="-0.0" iyy="0.000211" iyz="0.0" izz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.0015 -0.124904 -0.112373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/lowerleg6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.0015 -0.124904 -0.112373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/lowerleg6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lowerleg5_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0007501267092076824 0.0012989054626466323 -0.049023526239640236"/>
+    <mass value="0.25197878483643155"/>
+    <inertia ixx="0.000211" ixy="0.0" ixz="-0.0" iyy="0.000211" iyz="0.0" izz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.10892 -0.061153 -0.112373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/lowerleg5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.10892 -0.061153 -0.112373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/lowerleg5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="upperleg6_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.001500000000000007 -1.8907870720508146e-07 -0.06626642411830211"/>
+    <mass value="0.25482988143393964"/>
+    <inertia ixx="0.000223" ixy="-0.0" ixz="0.0" iyy="0.000222" iyz="0.0" izz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.0015 -0.124904 -0.228373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/upperleg6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.0015 -0.124904 -0.228373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/upperleg6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="upperleg3_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.0007501267126726469 0.001298981671999641 -0.0662664241183023"/>
+    <mass value="0.2548298814339397"/>
+    <inertia ixx="0.000223" ixy="-0.0" ixz="0.0" iyy="0.000223" iyz="0.0" izz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.10742 -0.063751 -0.228373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/upperleg3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.10742 -0.063751 -0.228373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/upperleg3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="upperleg1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.0015000000000000438 1.8978596048879748e-07 -0.06626642411830236"/>
+    <mass value="0.25482988143393986"/>
+    <inertia ixx="0.000223" ixy="0.0" ixz="-0.0" iyy="0.000222" iyz="0.0" izz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.0015 0.124904 -0.228373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/upperleg1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.0015 0.124904 -0.228373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/upperleg1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="upperleg5_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.000749873287327521 -0.001299170750706527 -0.06626642411830222"/>
+    <mass value="0.25482988143393964"/>
+    <inertia ixx="0.000223" ixy="0.0" ixz="-0.0" iyy="0.000223" iyz="0.0" izz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.10892 -0.061153 -0.228373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/upperleg5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.10892 -0.061153 -0.228373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/upperleg5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lowerleg2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.0007501273251715596 -0.0012989813183730409 -0.0662664241183025"/>
+    <mass value="0.2548298814339398"/>
+    <inertia ixx="0.000223" ixy="0.0" ixz="-0.0" iyy="0.000223" iyz="0.0" izz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.10742 0.063751 -0.228373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/lowerleg2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.10742 0.063751 -0.228373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/lowerleg2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="upperleg4_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.0007498726748281365 0.0012991711043335158 -0.0662664241183023"/>
+    <mass value="0.25482988143393964"/>
+    <inertia ixx="0.000223" ixy="-0.0" ixz="0.0" iyy="0.000223" iyz="0.0" izz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.10892 0.061153 -0.228373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/upperleg4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.10892 0.061153 -0.228373"/>
+    <geometry>
+      <mesh filename="package://crapdesign1_description/meshes/upperleg4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rev1" type="revolute">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.116"/>
+  <parent link="upperleg1_1"/>
+  <child link="lowerleg1_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+  <limit effort="100" lower="0.0" upper="0.785398" velocity="100"/>
+</joint>
+
+<joint name="Rev2" type="revolute">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.116"/>
+  <parent link="lowerleg2_1"/>
+  <child link="upperleg2_1"/>
+  <axis xyz="-0.5 -0.866025 0.0"/>
+  <limit effort="100" lower="0.0" upper="0.785398" velocity="100"/>
+</joint>
+
+<joint name="Rev3" type="revolute">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.116"/>
+  <parent link="upperleg4_1"/>
+  <child link="lowerleg4_1"/>
+  <axis xyz="-0.5 0.866025 -0.0"/>
+  <limit effort="100" lower="0.0" upper="0.785398" velocity="100"/>
+</joint>
+
+<joint name="Rev4" type="revolute">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.116"/>
+  <parent link="upperleg3_1"/>
+  <child link="lowerleg3_1"/>
+  <axis xyz="-0.5 0.866025 -0.0"/>
+  <limit effort="100" lower="0.0" upper="0.785398" velocity="100"/>
+</joint>
+
+<joint name="Rev5" type="revolute">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.116"/>
+  <parent link="upperleg6_1"/>
+  <child link="lowerleg6_1"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
+  <limit effort="100" lower="0.0" upper="0.785398" velocity="100"/>
+</joint>
+
+<joint name="Rev6" type="revolute">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.116"/>
+  <parent link="upperleg5_1"/>
+  <child link="lowerleg5_1"/>
+  <axis xyz="-0.5 -0.866025 0.0"/>
+  <limit effort="100" lower="0.0" upper="0.785398" velocity="100"/>
+</joint>
+
+<joint name="Rev7" type="revolute">
+  <origin rpy="0 0 0" xyz="-0.0015 0.124904 0.228373"/>
+  <parent link="base_link"/>
+  <child link="upperleg6_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+  <limit effort="100" lower="0.0" upper="0.785398" velocity="100"/>
+</joint>
+
+<joint name="Rev8" type="revolute">
+  <origin rpy="0 0 0" xyz="0.10742 0.063751 0.228373"/>
+  <parent link="base_link"/>
+  <child link="upperleg3_1"/>
+  <axis xyz="0.5 -0.866025 0.0"/>
+  <limit effort="100" lower="0.0" upper="0.785398" velocity="100"/>
+</joint>
+
+<joint name="Rev9" type="revolute">
+  <origin rpy="0 0 0" xyz="-0.0015 -0.124904 0.228373"/>
+  <parent link="base_link"/>
+  <child link="upperleg1_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+  <limit effort="100" lower="-0.785398" upper="0.0" velocity="100"/>
+</joint>
+
+<joint name="Rev10" type="revolute">
+  <origin rpy="0 0 0" xyz="-0.10892 0.061153 0.228373"/>
+  <parent link="base_link"/>
+  <child link="upperleg5_1"/>
+  <axis xyz="0.5 0.866025 -0.0"/>
+  <limit effort="100" lower="0.0" upper="0.785398" velocity="100"/>
+</joint>
+
+<joint name="Rev11" type="revolute">
+  <origin rpy="0 0 0" xyz="0.10742 -0.063751 0.228373"/>
+  <parent link="base_link"/>
+  <child link="lowerleg2_1"/>
+  <axis xyz="0.5 0.866025 -0.0"/>
+  <limit effort="100" lower="-0.785398" upper="0.0" velocity="100"/>
+</joint>
+
+<joint name="Rev12" type="revolute">
+  <origin rpy="0 0 0" xyz="-0.10892 -0.061153 0.228373"/>
+  <parent link="base_link"/>
+  <child link="upperleg4_1"/>
+  <axis xyz="0.5 -0.866025 0.0"/>
+  <limit effort="100" lower="-0.785398" upper="0.0" velocity="100"/>
+</joint>
+
+</robot>
