@@ -1,4 +1,5 @@
 # Hexapod
 
-Made By Sayak Nandi
+Made By Sayak Nandi.
+<br>
 The package  improvedesign1_description is only functional
