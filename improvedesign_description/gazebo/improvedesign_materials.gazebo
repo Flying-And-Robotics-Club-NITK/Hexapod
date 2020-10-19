@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<robot name="improvedesign" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<xacro:property name="body_color" value="Gazebo/Silver" />
+
+<gazebo reference="base_link">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="lowerleg1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="upperleg2">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="lowerleg4">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="lowerleg3">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="lowerleg6">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="lowerleg5">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="upperleg6">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="upperleg3">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="upperleg1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="upperleg5">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="lowerleg2">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="upperleg4">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="kneepin1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="thighpin1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="thighpin2">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="kneepin2">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="kneepin3">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="thighpin3">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="kneepin4">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="thighpin4">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="kneepin5">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="thighpin5">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="kneepin6">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="thighpin6">
+  <material>${body_color}</material>
+</gazebo>
+
+</robot>
