@@ -2,4 +2,4 @@
 
 Made By Sayak Nandi.
 <br>
-The package improvedesign1_description and improvedesign_descriptioni are only functional
+The package improvedesign1_description and improvedesign_description are only functional
