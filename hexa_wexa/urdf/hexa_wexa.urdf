@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com)
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="hexa_wexa">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-1.11022302462516E-16 8.32667268468867E-16 0.0329215154523213"
+        rpy="0 0 0" />
+      <mass
+        value="2.06099139407896" />
+      <inertia
+        ixx="0.0101180981973123"
+        ixy="-1.4361818168078E-15"
+        ixz="1.13727748333106E-19"
+        iyy="0.0101180981974174"
+        iyz="5.28927273539273E-19"
+        izz="0.0197053897177076" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="0 -0.000390541423954061 -0.0520431996238184"
+        rpy="0 0 0" />
+      <mass
+        value="0.0161867713531685" />
+      <inertia
+        ixx="2.90017231403271E-05"
+        ixy="6.7762635780344E-21"
+        ixz="-8.50537169564026E-21"
+        iyy="2.51034835558057E-05"
+        iyz="-5.13859201514917E-06"
+        izz="3.96568446515958E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="femur1"
+    type="revolute">
+    <origin
+      xyz="0.14515 -0.13347 0.01"
+      rpy="0 0 0.5236" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="50" />
+  </joint>
+  <link
+    name="link_1.1">
+    <inertial>
+      <origin
+        xyz="-0.0426285870362159 -0.00501916657630452 -0.00729447440820258"
+        rpy="0 0 0" />
+      <mass
+        value="0.172077268178404" />
+      <inertia
+        ixx="0.000231425971647549"
+        ixy="-4.49143962276963E-10"
+        ixz="1.89213210170286E-06"
+        iyy="0.000275463997514187"
+        iyz="1.27642229960103E-05"
+        izz="7.5723265385277E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_1.1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_1.1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg1"
+    type="revolute">
+    <origin
+      xyz="0 -0.02283 -0.099002"
+      rpy="-0.046051 0 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_1.1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="50" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="-8.32667268468867E-17 -0.000390541423954061 -0.0520431996238183"
+        rpy="0 0 0" />
+      <mass
+        value="0.0161867713531686" />
+      <inertia
+        ixx="2.90017231403271E-05"
+        ixy="1.85801300952691E-20"
+        ixz="2.02679642762048E-21"
+        iyy="2.51034835558058E-05"
+        iyz="-5.13859201514918E-06"
+        izz="3.9656844651596E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="femur2"
+    type="revolute">
+    <origin
+      xyz="0.18816 0.05897 0.01"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="50" />
+  </joint>
+  <link
+    name="link_2.2">
+    <inertial>
+      <origin
+        xyz="-0.0426285870058558 -0.00501916661698198 -0.00729447436625907"
+        rpy="0 0 0" />
+      <mass
+        value="0.172077268568037" />
+      <inertia
+        ixx="0.000231425083797164"
+        ixy="-4.48969659915652E-10"
+        ixz="1.89213220657379E-06"
+        iyy="0.000275463082426943"
+        iyz="1.27642153499068E-05"
+        izz="7.57233043712846E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_2.2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_2.2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg2"
+    type="revolute">
+    <origin
+      xyz="0 -0.02283 -0.099002"
+      rpy="-0.046051 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_2.2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="50" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 -0.000390541423954074 -0.0520431996238182"
+        rpy="0 0 0" />
+      <mass
+        value="0.0161867713531686" />
+      <inertia
+        ixx="2.90017231403272E-05"
+        ixy="2.79520872593919E-20"
+        ixz="1.18265634115863E-20"
+        iyy="2.51034835558058E-05"
+        iyz="-5.13859201514919E-06"
+        izz="3.96568446515959E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="femur3"
+    type="revolute">
+    <origin
+      xyz="0.043011 0.19244 0.01"
+      rpy="0 0 2.618" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="50" />
+  </joint>
+  <link
+    name="link_3.3">
+    <inertial>
+      <origin
+        xyz="-0.042807342236036 -0.00501916662215592 -0.00615932155635768"
+        rpy="0 0 0" />
+      <mass
+        value="0.172077268091205" />
+      <inertia
+        ixx="0.00023141657003237"
+        ixy="3.38677520311463E-07"
+        ixz="-2.24586714486416E-06"
+        iyy="0.000275463997357553"
+        iyz="1.27597291678561E-05"
+        izz="7.57326668898429E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_3.3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_3.3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg3"
+    type="revolute">
+    <origin
+      xyz="0 -0.02283 -0.099002"
+      rpy="-0.046067 -0.026543 0.0012235" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_3.3" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="50" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="-6.93889390390723E-18 -0.000390541423954116 -0.0520431996238183"
+        rpy="0 0 0" />
+      <mass
+        value="0.0161867713531686" />
+      <inertia
+        ixx="2.90017231403271E-05"
+        ixy="4.74338450462408E-20"
+        ixz="6.26552831118306E-20"
+        iyy="2.51034835558057E-05"
+        iyz="-5.13859201514918E-06"
+        izz="3.96568446515959E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="femur4"
+    type="revolute">
+    <origin
+      xyz="-0.14515 0.13347 0.01"
+      rpy="0 0 -2.618" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="50" />
+  </joint>
+  <link
+    name="link_4.4">
+    <inertial>
+      <origin
+        xyz="-0.0424197356336695 -0.00501916657630445 -0.00842447733487048"
+        rpy="0 0 0" />
+      <mass
+        value="0.172077268178403" />
+      <inertia
+        ixx="0.000231215556596787"
+        ixy="-3.39575333485197E-07"
+        ixz="6.02478897876616E-06"
+        iyy="0.000275463997514186"
+        iyz="1.27597052272569E-05"
+        izz="7.59336804360387E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_4.4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_4.4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg4"
+    type="revolute">
+    <origin
+      xyz="0 -0.02283 -0.099002"
+      rpy="-0.046067 0.026543 -0.0012235" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_4.4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="50" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 -0.000390541423954144 -0.0520431996238182"
+        rpy="0 0 0" />
+      <mass
+        value="0.0161867713531685" />
+      <inertia
+        ixx="2.90017231403272E-05"
+        ixy="-6.20197374025219E-21"
+        ixz="-1.32695616895557E-20"
+        iyy="2.51034835558058E-05"
+        iyz="-5.13859201514918E-06"
+        izz="3.96568446515958E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="femur5"
+    type="revolute">
+    <origin
+      xyz="-0.18816 -0.05897 0.01"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="50" />
+  </joint>
+  <link
+    name="link_5.5">
+    <inertial>
+      <origin
+        xyz="-0.0426285870058558 -0.00501916661698201 -0.00729447436625913"
+        rpy="0 0 0" />
+      <mass
+        value="0.172077268568037" />
+      <inertia
+        ixx="0.000231425083797165"
+        ixy="-4.48969659886024E-10"
+        ixz="1.89213220657372E-06"
+        iyy="0.000275463082426944"
+        iyz="1.2764215349907E-05"
+        izz="7.57233043712848E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_5.5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_5.5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg5"
+    type="revolute">
+    <origin
+      xyz="0 -0.02283 -0.099002"
+      rpy="-0.046051 0 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_5.5" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="50" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 -0.000390541423954061 -0.0520431996238183"
+        rpy="0 0 0" />
+      <mass
+        value="0.0161867713531686" />
+      <inertia
+        ixx="2.90017231403271E-05"
+        ixy="-5.0821976835258E-21"
+        ixz="-2.98382166343931E-20"
+        iyy="2.51034835558057E-05"
+        iyz="-5.13859201514916E-06"
+        izz="3.96568446515959E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="femur6"
+    type="revolute">
+    <origin
+      xyz="-0.043011 -0.19244 0.01"
+      rpy="0 0 -0.5236" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="50" />
+  </joint>
+  <link
+    name="link_6.6">
+    <inertial>
+      <origin
+        xyz="-0.0426285870484895 -0.00501916662215596 -0.00729447445653715"
+        rpy="0 0 0" />
+      <mass
+        value="0.172077268091205" />
+      <inertia
+        ixx="0.000231425971559307"
+        ixy="-4.48988344814688E-10"
+        ixz="1.8921322455992E-06"
+        iyy="0.000275463997357554"
+        iyz="1.27642230746021E-05"
+        izz="7.57232653629073E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_6.6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexa_wexa/meshes/link_6.6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg6"
+    type="revolute">
+    <origin
+      xyz="0 -0.02283 -0.099002"
+      rpy="-0.046051 0 0" />
+    <parent
+      link="link_6" />
+    <child
+      link="link_6.6" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="50" />
+  </joint>
+
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/hexa_wexa</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+  </gazebo>
+
+  <transmission name="leg1_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="leg1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="leg1_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="leg2_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="leg2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="leg2_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="leg3_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="leg3">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="leg3_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="leg4_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="leg4">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="leg4_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="leg5_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="leg5">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="leg5_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="leg6_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="leg6">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="leg6_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="leg1_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="leg1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="femur1_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="femur1_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="femur1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="femur1_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="femur2_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="femur2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="femur2_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="femur3_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="femur3">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="femur3_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="femur4_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="femur4">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="femur4_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="femur5_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="femur5">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="femur5_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="femur6_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="femur6">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="femur6_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+</robot>
