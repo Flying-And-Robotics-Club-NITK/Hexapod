@@ -1,7 +1,7 @@
 # Hexapod
 
-Mix.py, ttr.py and walkhappy.py are the functional codes
-<br>
+Mix.py, ttr.py, oneleg.py and walkhappy.py are the functional codes
+<br><br>
 mix.py -> walk with 6 legs with leg 3 as front direction
 <br>
 ttr.py -> walk with legs 2,4 and 6 where 2 and 4 are front legs     //even set 
