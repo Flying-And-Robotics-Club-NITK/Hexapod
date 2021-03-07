@@ -1,9 +1,0 @@
-<?xml version="1.0" ?>
-
-<launch>
-
-	<include file="$(find improvedesign_description)/launch/gazebo.launch"/>
-
-	<include file="$(find improvedesign_description)/launch/rviz.launch"/>
-
-</launch>
